@@ -24,7 +24,7 @@ namespace DataValidationProject.Models
         public int Age { get; set; }
 
         [Display(Name = "annual Income")]
-        [DateType(DataType.Currency)]
+        [DataType(DataType.Currency)]
         [Range(0,10000000, ErrorMessage ="Income must be between 0 and $10,000,000")]
         public decimal? AnnualIncome { get; set; }
 
